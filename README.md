@@ -1,1 +1,1 @@
-# angular-boilerplate
+pob-frontend
