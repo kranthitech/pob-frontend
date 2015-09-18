@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('boilerplate')
+    .module('payOnBehalf')
     .config(config);
 
   /** @ngInject */
@@ -15,7 +15,6 @@
     toastr.options.positionClass = 'toast-top-right';
     toastr.options.preventDuplicates = true;
     toastr.options.progressBar = true;
-    
   }
 
 })();

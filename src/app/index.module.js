@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('boilerplate', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial','angular-loading-bar']);
+    .module('payOnBehalf', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial','angular-loading-bar']);
 
 })();

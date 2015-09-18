@@ -1,14 +1,14 @@
+
 (function() {
   'use strict';
 
   angular
     .module('payOnBehalf')
-    .run(runBlock);
+    .directive('skeleton', funcName);
 
   /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
+  function funcName() {
+    
   }
 
 })();

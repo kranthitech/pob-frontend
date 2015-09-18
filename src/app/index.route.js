@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('boilerplate')
+    .module('payOnBehalf')
     .config(routeConfig);
 
   /** @ngInject */
@@ -13,6 +13,10 @@
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
+      })
+      .state('aboutus',{
+        url:'/aboutus',
+        template:'This is a test page'
       });
 
     $urlRouterProvider.otherwise('/');

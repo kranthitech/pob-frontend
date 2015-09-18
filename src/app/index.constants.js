@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('boilerplate')
+    .module('payOnBehalf')
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment);

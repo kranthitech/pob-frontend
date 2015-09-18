@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('boilerplate')
+    .module('payOnBehalf')
     .controller('MainController', MainController);
 
   /** @ngInject */

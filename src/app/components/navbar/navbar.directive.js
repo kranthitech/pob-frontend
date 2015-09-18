@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('boilerplate')
+    .module('payOnBehalf')
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */
