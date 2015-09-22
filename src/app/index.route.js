@@ -17,6 +17,10 @@
       .state('aboutus',{
         url:'/aboutus',
         template:'This is a test page'
+      }).state('splash',{
+        url:'/splash',
+        templateUrl: 'app/splash/splash.html',
+        controller: 'SplashController'
       });
 
     $urlRouterProvider.otherwise('/');
