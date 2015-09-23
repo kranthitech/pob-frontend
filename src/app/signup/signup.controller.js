@@ -4,16 +4,13 @@
 
   angular
     .module('payOnBehalf')
-    .controller('SplashController', SplashController);
+    .controller('signupController', signupController);
 
    	 /** @ngInject */
-	  function SplashController($scope,$state) {
+	  function signupController($scope) {
 		   $scope.test="123";
 		   $scope.active=function(){
 		   		return true;
 		   };
-		   setTimeout(function(){
-		   		$state.go("signup");
-		   },1000);
 	  }
 })();

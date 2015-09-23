@@ -7,20 +7,77 @@
 
   /** @ngInject */
   function routeConfig($stateProvider, $urlRouterProvider) {
-    $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      })
-      .state('aboutus',{
+    $stateProvider.state('aboutus',{
         url:'/aboutus',
         template:'This is a test page'
       }).state('splash',{
         url:'/splash',
-        templateUrl: 'app/splash/splash.html',
-        controller: 'SplashController'
+        views:{
+          "content":{
+            templateUrl: 'app/splash/splash.html',
+            controller: 'SplashController'    
+          }
+        }
+      }).state('signup',{
+        url:'/signup',
+        views:{
+          "header":{
+            templateUrl:'app/signup/header.html',
+            controller: 'SplashController'    
+          },
+          "content":{
+            templateUrl: 'app/signup/signup.html',
+            controller: 'SplashController'    
+          }
+        }
+      }).state('verify',{
+        url:"/verify",
+         views:{
+          "header":{
+            templateUrl:'app/verification/header.html',
+            controller: 'verificationCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/verification/verification.html',
+            controller: 'verificationCtrl'    
+          }
+        }
+      }).state('pinsetup',{
+        url:"/pinsetup",
+         views:{
+          "header":{
+            templateUrl:'app/pinsetup/header.html',
+            controller: 'pinSetupCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/pinsetup/pinsetup.html',
+            controller: 'pinSetupCtrl'    
+          }
+        }
+      }).state('pinInput',{
+        url:"/pinInput",
+         views:{
+          "header":{
+            templateUrl:'app/pinInput/header.html',
+            controller: 'pinInputCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/pinInput/pinInput.html',
+            controller: 'pinInputCtrl'    
+          }
+        }
+      }).state('home',{
+        url:"/home",
+         views:{
+          "header":{
+            templateUrl:'app/home/header.html',
+            controller: 'homeCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/home/home.html',
+            controller: 'homeCtrl'    
+          }
+        }
       });
 
     $urlRouterProvider.otherwise('/');

@@ -1,0 +1,32 @@
+
+  <md-content layout-padding layout-align="space-around center">
+    <form name="userForm">
+        <div layout layout="column" ng-model="user.mobile">
+        	<md-input-container style="width:20%">
+	            <label>Country Code</label>
+	            <input ng-model="user.mobile.countryCode">
+	      	</md-input-container>
+	        <md-input-container style="width:80%">
+	            <label>Mobile</label>
+	            <input ng-model="user.mobile.mobile">
+	      	</md-input-container>
+	    </div>
+	    <div layout layout-sm="column">
+	        <md-input-container flex>
+	          <label>First name</label>
+	          <input ng-model="user.firstName">
+	        </md-input-container>
+	        <md-input-container flex>
+	          <label>Last Name</label>
+	          <input ng-model="theMax">
+	        </md-input-container>
+	    </div>
+		<md-input-container flex>
+	        <label>Email</label>
+	        <input ng-model="user.email">
+	  	</md-input-container>
+	  	<section layout="row" layout-sm="row" layout-align="center center">
+	      <md-button class="md-raised md-primary">SignUp</md-button>
+	    </section>
+    </form>
+  </md-content>

@@ -8,6 +8,8 @@ html {
   flex-direction: row;
 }
 
+
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -52,4 +54,18 @@ section.jumbotron h1 {
 .techs md-card img.pull-right {
   float: right;
   width: 50px;
+}
+.fullHeight{
+  height:100%;
+}
+.welcomeLogo{
+  background:red;
+  display:table;
+  width:100%;
+}
+.welcomeLogo .content{
+  display:table-cell;
+  vertical-align: middle;
+  text-align:center;
+  
 }

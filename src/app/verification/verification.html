@@ -1,0 +1,20 @@
+
+  <md-content layout-padding layout-align="space-around center">
+    <form name="userForm" flex layout="column" layout-align="center center">
+    	<md-input-container>
+            <label>Mobile Verification Code</label>
+            <input ng-model="user.verification.mobile">
+      	</md-input-container>
+      	<md-content layout="column" flex layout-align="center center">
+      		Or
+      	</md-content>
+      	<md-input-container>
+            <label>Email Verification Code</label>
+            <input ng-model="user.verification.email">
+      	</md-input-container>
+	  	<section layout="column" layout-sm="column" layout-align="center center">
+	      <md-button class="md-raised md-primary">Verify</md-button>
+	      <md-button class="md-primary" ng-href="#" target="_blank">Resend Code</md-button>
+	    </section>
+    </form>
+  </md-content>
