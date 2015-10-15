@@ -1,0 +1,24 @@
+<md-list>
+  <md-list-item class="md-2-line" ng-repeat="item in list">
+    <div class="md-list-item-text">
+    	<div layout="row">
+		  <div flex="20">
+		    Status
+		  </div>
+		  <div flex>
+		    <h2 ng-if="item.type=='pay'">Pay on behalf of {{item.name}}</h2>
+		    <h2 ng-if="item.type=='delegate'">Delegated to {{item.name}}</h2>
+		    <h3>{{item.subject}}</h3>
+		    <div ng-repeat="product in item.items">
+		    	<h4>{{product.name}}</h4><h4>{{product.value}}</h4>
+		    </div>
+		  </div>
+		  <div flex>
+		    <md-button ng-if="item.type=='pay'" class="md-raised md-primary">Pay</md-button>
+		    <md-button ng-if="item.type=='delegate'" class="md-raised md-warn">Cancel</md-button>
+		  </div>
+		</div>
+      
+    </div>
+  </md-list-item>
+</md-list>

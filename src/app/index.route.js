@@ -67,7 +67,6 @@
           }
         }
       }).state('home',{
-        url:"/home",
          views:{
           "header":{
             templateUrl:'app/home/header.html',
@@ -76,6 +75,22 @@
           "content":{
             templateUrl: 'app/home/home.html',
             controller: 'homeCtrl'    
+          }
+        }
+      }).state('home.tabs',{
+        url:"/home",
+        views:{
+          "beneficiaries":{
+            templateUrl:'app/beneficiaries/beneficiaries.html',
+            controller:'beneficiariesCtrl'
+          },
+          "sponsors":{
+            templateUrl:'app/sponsors/sponsors.html',
+            controller:'sponsorsCtrl'
+          },
+          "orders":{
+            templateUrl:'app/orders/orders.html',
+            controller:'ordersCtrl'
           }
         }
       });
