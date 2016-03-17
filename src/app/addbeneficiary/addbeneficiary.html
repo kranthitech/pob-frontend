@@ -1,16 +1,16 @@
 <md-content layout-padding layout-align="space-around center">
     <form name="userForm" flex layout="column" layout-align="center center">
     	<md-input-container>
-            <label>Enter Phone Number</label>
-            <input ng-model="user.mobile">
+            <label>Beneficiary Phone Number</label>
+            <input ng-model="beneficiary.mobile">
       	</md-input-container>
         <md-input-container>
-            <label>Enter Pin</label>
-            <input ng-model="user.pin">
+            <label>Beneficiary Name</label>
+            <input ng-model="beneficiary.name">
         </md-input-container>
 	  	<section layout="column" layout-sm="column" layout-align="center center">
-	      <md-button class="md-raised md-primary">Enter</md-button>
+	      <md-button class="md-raised md-primary">Add</md-button>
 	    </section>
-      USER is {{user}}
+      beneficiary is {{beneficiary}}
     </form>
   </md-content>

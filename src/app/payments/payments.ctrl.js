@@ -4,10 +4,10 @@
 
   angular
     .module('payOnBehalf')
-    .controller('ordersCtrl', ordersCtrl);
+    .controller('paymentsCtrl', paymentsCtrl);
 
    	 /** @ngInject */
-	  function ordersCtrl($scope) {
+	  function paymentsCtrl($scope) {
 		  $scope.list=[
 		  	{
 		  		name:"Gourav",

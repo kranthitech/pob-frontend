@@ -80,17 +80,85 @@
       }).state('home.tabs',{
         url:"/home",
         views:{
-          "beneficiaries":{
-            templateUrl:'app/beneficiaries/beneficiaries.html',
-            controller:'beneficiariesCtrl'
+          "people":{
+            templateUrl:'app/people/people.html',
+            controller:'peopleCtrl'
           },
-          "sponsors":{
-            templateUrl:'app/sponsors/sponsors.html',
-            controller:'sponsorsCtrl'
+          "payments":{
+            templateUrl:'app/payments/payments.html',
+            controller:'paymentsCtrl'
+          }
+        }
+      }).state('addbeneficiary',{
+        url:"/addbeneficiary",
+         views:{
+          "header":{
+            templateUrl:'app/addbeneficiary/header.html',
+            controller: 'addbeneficiaryCtrl'    
           },
-          "orders":{
-            templateUrl:'app/orders/orders.html',
-            controller:'ordersCtrl'
+          "content":{
+            templateUrl: 'app/addbeneficiary/addbeneficiary.html',
+            controller: 'addbeneficiaryCtrl'    
+          }
+        }
+      }).state('addsponsor',{
+        url:"/addsponsor",
+         views:{
+          "header":{
+            templateUrl:'app/addsponsor/header.html',
+            controller: 'addsponsorCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/addsponsor/addsponsor.html',
+            controller: 'addsponsorCtrl'    
+          }
+        }
+      }).state('sentstatus',{
+        url:"/sentstatus",
+         views:{
+          "header":{
+            templateUrl:'app/sentstatus/header.html',
+            controller: 'sentstatusCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/sentstatus/sentstatus.html',
+            controller: 'sentstatusCtrl'    
+          }
+        }
+      }).state('requestaction',{
+        url:"/requestaction",
+         views:{
+          "header":{
+            templateUrl:'app/requestaction/header.html',
+            controller: 'requestactionCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/requestaction/requestaction.html',
+            controller: 'requestactionCtrl'    
+          }
+        }
+      }).state('receivedrequest',{
+        url:"/receivedrequest",
+         views:{
+          "header":{
+            templateUrl:'app/receivedrequest/header.html',
+            controller: 'receivedrequestCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/receivedrequest/receivedrequest.html',
+            controller: 'receivedrequestCtrl'    
+          }
+        }
+      }).state('checkrequest',{
+        url:"/checkrequest",
+         views:{
+          "header":{
+            templateUrl:'app/checkrequest/header.html',
+            controller: 'checkrequestCtrl'    
+          },
+          "content":{
+            templateUrl: 'app/checkrequest/checkrequest.html',
+            controller: 'checkrequestCtrl'    
           }
         }
       });

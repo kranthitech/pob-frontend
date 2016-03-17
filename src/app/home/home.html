@@ -1,19 +1,16 @@
- <md-content style="height:100%;max-height: 100%;" class="md-padding">
+<md-content style="height:100%;max-height: 100%;" class="md-padding">
     <md-tabs style="height:100%;max-height: 100%;overflow-y:auto;" md-dynamic-height md-border-bottom md-selected="selectedTab" md-stretch-tabs md-center-tabs>
-      <md-tab label="Beneficiaries">
-        <md-content layout="column" flex class="md-padding" md-swipe-left="onSwipeLeft()" md-swipe-right="onSwipeRight()">
-          <div ui-view="beneficiaries"><div>
-        </md-content>
-      </md-tab>
-      <md-tab label="Sponsors">
-        <md-content layout="column" flex  class="md-padding" md-swipe-left="onSwipeLeft()" md-swipe-right="onSwipeRight()">
-          <div ui-view="sponsors"><div>
-        </md-content>
-      </md-tab>
-      <md-tab label="Orders">
-        <md-content layout="column" flex  class="md-padding" md-swipe-left="onSwipeLeft()" md-swipe-right="onSwipeRight()">
-          <div ui-view="orders"><div>
-        </md-content>
-      </md-tab>
+        <md-tab label="People">
+            <md-content layout="column" flex class="md-padding" md-swipe-left="onSwipeLeft()" md-swipe-right="onSwipeRight()">
+                <div ui-view="people">
+                    <div>
+            </md-content>
+        </md-tab>
+        <md-tab label="Payments">
+            <md-content layout="column" flex class="md-padding" md-swipe-left="onSwipeLeft()" md-swipe-right="onSwipeRight()">
+                <div ui-view="payments">
+                    <div>
+            </md-content>
+        </md-tab>
     </md-tabs>
-  </md-content>
+</md-content>
